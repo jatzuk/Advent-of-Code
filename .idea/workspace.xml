@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a2cf3b0-39dd-4987-8c1a-3ebfbc8a2fcf" name="Changes" comment="day 2 puzzle">
+    <list default="true" id="1a2cf3b0-39dd-4987-8c1a-3ebfbc8a2fcf" name="Changes" comment="clarify better source naming structure">
       <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dev/jatzuk/aoc/y2024/day02/Part2.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dev/jatzuk/aoc/y2024/day02/Part2.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +72,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "jatzuk"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/jatzuk/Advent-of-Code.git",
+    "accountId": "7e20891a-c6ff-4014-b583-f7934620dc9e"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -187,7 +198,7 @@
       <command value="./gradlew :test --tests" />
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Kotest.Run all in aoc.test">
     <configuration name="Part1Test (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -363,20 +374,29 @@
       <option name="project" value="LOCAL" />
       <updated>1733153811665</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="clarify better source naming structure">
+      <option name="closed" value="true" />
+      <created>1733155993661</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1733155993661</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="day 1 puzzle" />
     <MESSAGE value="day 2 puzzle" />
-    <option name="LAST_COMMIT_MESSAGE" value="day 2 puzzle" />
+    <MESSAGE value="clarify better source naming structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="clarify better source naming structure" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/main/kotlin/dev/jatzuk/aoc/y2024/day02/Part2.kt</url>
+          <url>file://$PROJECT_DIR$/src/main/kotlin/dev/jatzuk/aoc/y2024/day02/D2P2.kt</url>
           <line>12</line>
           <option name="timeStamp" value="40" />
         </line-breakpoint>
