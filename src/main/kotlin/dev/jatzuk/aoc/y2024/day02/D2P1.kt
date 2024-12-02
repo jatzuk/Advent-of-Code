@@ -4,7 +4,7 @@ import kotlin.math.abs
 
 class D2P1 {
 
-  fun solution(input: Array<IntArray>): Int = input.count { checkValues(it.toList()) }
+  fun solution(input: List<List<Int>>): Int = input.count(::checkValues)
 
   private fun checkValues(input: List<Int>): Boolean {
     val increaseCount = input.zipWithNext().count { (a, b) -> a < b }

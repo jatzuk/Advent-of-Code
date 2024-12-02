@@ -2,14 +2,14 @@ package dev.jatzuk.aoc.y2024.day02
 
 class D2P2 {
 
-  fun solution(input: Array<IntArray>): Int {
+  fun solution(input: List<List<Int>>): Int {
     return input.toList().count { origin ->
-      if (checkValues(origin.toList())) {
+      if (checkValues(origin)) {
         return@count true
       }
 
       origin.indices.any { originIndex ->
-        val removed = origin.filterIndexed() {index, _ -> index != originIndex }
+        val removed = origin.filterIndexed { index, _ -> index != originIndex }
         checkValues(removed)
       }
     }

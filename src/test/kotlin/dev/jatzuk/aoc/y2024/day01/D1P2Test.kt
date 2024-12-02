@@ -24,13 +24,13 @@ class D1P2Test : FunSpec({
   }
 
   test("example") {
-    val (left, right) =getInputs("/y2024/day01/part2/input0")
+    val (left, right) = getInputs("/y2024/day01/part2/input0")
     val result = D1P2().solution(left.toLongArray(), right.toLongArray())
     result.shouldBe(31)
   }
 
   test("solution") {
-    val (left, right) =getInputs("/y2024/day01/part2/input1")
+    val (left, right) = getInputs("/y2024/day01/part2/input1")
     val result = D1P2().solution(left.toLongArray(), right.toLongArray())
     result.shouldBe(22962826)
   }

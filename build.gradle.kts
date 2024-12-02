@@ -15,6 +15,10 @@ dependencies {
 
 tasks.test {
   useJUnitPlatform()
+
+  filter {
+    includeTestsMatching("dev.jatzuk.aoc.y2024.*")
+  }
 }
 
 kotlin {
