@@ -62,7 +62,7 @@ Alternatively, you can use Gradle to run specific tests:
 - Or execute all tests within day 2 puzzles (2 parts, each has 2 tests in it):
 
   ```gradle
-    ./gradlew :test --tests 'dev.jatzuk.aoc.y2024.day02.*'
+  ./gradlew :test --tests 'dev.jatzuk.aoc.y2024.day02.*'
   ```
 
 - Alternatively run all tests under the `test` source set:
