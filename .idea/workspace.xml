@@ -4,33 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a2cf3b0-39dd-4987-8c1a-3ebfbc8a2fcf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_blame.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="1a2cf3b0-39dd-4987-8c1a-3ebfbc8a2fcf" name="Changes" comment="day 2 puzzle">
       <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/dev/jatzuk/aoc/y2024/day01/Part1.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/dev/jatzuk/aoc/y2024/day01/Part2.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/dev/jatzuk/aoc/y2024/day01/Part1Test.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/dev/jatzuk/aoc/y2024/day01/Part2Test.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/dev/jatzuk/aoc/y2024/io.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/y2024/day01/part1/input0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/y2024/day01/part1/input1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/y2024/day01/part2/input0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/y2024/day01/part2/input1" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +93,13 @@
     "Gradle.Part01Test.executor": "Run",
     "Gradle.Part1Test (1).executor": "Run",
     "Gradle.Part1Test.executor": "Run",
+    "Gradle.Part2Test (1).executor": "Run",
+    "Gradle.Part2Test.executor": "Run",
     "Gradle.SolutionTest.executor": "Run",
+    "Gradle.aoc [:test --tests dev.jatzuk.aoc.y2024.day01.Part1Test.kt].executor": "Run",
+    "Gradle.aoc [:test --tests dev.jatzuk.aoc.y2024.day01].executor": "Run",
+    "Gradle.aoc [:test --tests].executor": "Run",
+    "Gradle.aoc [io.kotest.engine.launcher.MainKt].executor": "Run",
     "Gradle.aoc2024 [check].executor": "Run",
     "Kotest.Day01Test: example (1).executor": "Run",
     "Kotest.Day01Test: example (2).executor": "Run",
@@ -135,9 +116,21 @@
     "Kotest.Part01Test: example (4).executor": "Run",
     "Kotest.Part01Test: example.executor": "Run",
     "Kotest.Part01Test: first part.executor": "Run",
-    "Kotest.Part2Test: example (1).executor": "Run",
+    "Kotest.Part1Test: example (1).executor": "Run",
+    "Kotest.Part1Test: example (2).executor": "Run",
+    "Kotest.Part1Test: example (3).executor": "Debug",
+    "Kotest.Part1Test: example (4).executor": "Run",
+    "Kotest.Part1Test: example.executor": "Debug",
+    "Kotest.Part1Test: solution (1).executor": "Run",
+    "Kotest.Part1Test: solution.executor": "Run",
+    "Kotest.Part2Test: example (1).executor": "Debug",
     "Kotest.Part2Test: example (2).executor": "Run",
-    "Kotest.Part2Test: example.executor": "Debug",
+    "Kotest.Part2Test: example.executor": "Run",
+    "Kotest.Part2Test: solution (1).executor": "Run",
+    "Kotest.Part2Test: solution (2).executor": "Run",
+    "Kotest.Part2Test: solution (3).executor": "Debug",
+    "Kotest.Part2Test: solution (4).executor": "Run",
+    "Kotest.Part2Test: solution (5).executor": "Run",
     "Kotest.Part2Test: solution.executor": "Run",
     "Kotest.Run all in aoc.test.executor": "Run",
     "Kotest.SolutionTest: my first test.executor": "Run",
@@ -152,7 +145,7 @@
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last.edited.regexp": "Sample      Text\nfsfsf  sffsf",
-    "last_opened_file_path": "/Users/djayathiratne/dev/stuff/aoc/src/test/resources",
+    "last_opened_file_path": "/Users/djayathiratne/dev/stuff/aoc",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -161,6 +154,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/test/resources/y2024/day02/part2" />
       <recent name="$PROJECT_DIR$/src/test/resources" />
       <recent name="$PROJECT_DIR$/src/test/resources/y2024/day01" />
     </key>
@@ -175,13 +170,22 @@
       <recent name="dev.jatzuk.aoc.y2024.day01" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="dev.jatzuk.aoc.y2024.day02" />
       <recent name="dev.jatzuk.aoc.y2024.day01" />
       <recent name="dev.jatzuk.aoc.y2024" />
       <recent name="dev.jatzuk.aoc2024.day01" />
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotest.Run all in aoc.test">
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="./gradlew :test --tests dev.jatzuk.aoc.y2024.day01.Part1Test.kt" />
+      <command value="./gradlew :test --tests dev.jatzuk.aoc.y2024.day01" />
+      <command value="./gradlew io.kotest.engine.launcher.MainKt" />
+      <command value="./gradlew :test --tests" />
+    </option>
+  </component>
+  <component name="RunManager">
     <configuration name="Part1Test (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -195,7 +199,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;dev.jatzuk.aoc.y2024.day01.Part1Test&quot;" />
+            <option value="&quot;dev.jatzuk.aoc.y2024.day02.Part1Test&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -206,14 +210,38 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="Part2Test: example (1)" type="ioKotest" factoryName="Kotest" temporary="true" defaultName="singleModule">
+    <configuration name="Part2Test (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;dev.jatzuk.aoc.y2024.day02.Part2Test&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="Part1Test: example (4)" type="ioKotest" factoryName="Kotest" temporary="true" defaultName="singleModule">
       <module name="aoc.test" />
       <option name="jrePath" value="" />
       <option name="jrePathEnabled" value="false" />
       <option name="passParentEnvs" value="true" />
       <option name="workingDirectory" value="$MODULE_WORKING_DIR$" />
       <option name="programParameters" value="" />
-      <option name="specName" value="dev.jatzuk.aoc.y2024.day01.Part2Test" />
+      <option name="specName" value="dev.jatzuk.aoc.y2024.day02.Part1Test" />
       <option name="testPath" value="example" />
       <option name="packageName" value="" />
       <option name="vmparams" value="" />
@@ -221,15 +249,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Part2Test: example (2)" type="ioKotest" factoryName="Kotest" temporary="true" defaultName="singleModule">
+    <configuration name="Part1Test: solution" type="ioKotest" factoryName="Kotest" temporary="true" defaultName="singleModule">
       <module name="aoc.test" />
       <option name="jrePath" value="" />
       <option name="jrePathEnabled" value="false" />
       <option name="passParentEnvs" value="true" />
       <option name="workingDirectory" value="$MODULE_WORKING_DIR$" />
       <option name="programParameters" value="" />
-      <option name="specName" value="dev.jatzuk.aoc.y2024.day01.Part2Test" />
-      <option name="testPath" value="example" />
+      <option name="specName" value="dev.jatzuk.aoc.y2024.day02.Part1Test" />
+      <option name="testPath" value="solution" />
       <option name="packageName" value="" />
       <option name="vmparams" value="" />
       <method v="2">
@@ -243,23 +271,8 @@
       <option name="passParentEnvs" value="true" />
       <option name="workingDirectory" value="$MODULE_WORKING_DIR$" />
       <option name="programParameters" value="" />
-      <option name="specName" value="dev.jatzuk.aoc.y2024.day01.Part2Test" />
+      <option name="specName" value="dev.jatzuk.aoc.y2024.day02.Part2Test" />
       <option name="testPath" value="example" />
-      <option name="packageName" value="" />
-      <option name="vmparams" value="" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Part2Test: solution" type="ioKotest" factoryName="Kotest" temporary="true" defaultName="singleModule">
-      <module name="aoc.test" />
-      <option name="jrePath" value="" />
-      <option name="jrePathEnabled" value="false" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" value="$MODULE_WORKING_DIR$" />
-      <option name="programParameters" value="" />
-      <option name="specName" value="dev.jatzuk.aoc.y2024.day01.Part2Test" />
-      <option name="testPath" value="solution" />
       <option name="packageName" value="" />
       <option name="vmparams" value="" />
       <method v="2">
@@ -283,19 +296,19 @@
     </configuration>
     <list>
       <item itemvalue="Gradle.Part1Test (1)" />
+      <item itemvalue="Gradle.Part2Test (1)" />
       <item itemvalue="Kotest.Run all in aoc.test" />
+      <item itemvalue="Kotest.Part1Test: example (4)" />
+      <item itemvalue="Kotest.Part1Test: solution" />
       <item itemvalue="Kotest.Part2Test: example" />
-      <item itemvalue="Kotest.Part2Test: example (1)" />
-      <item itemvalue="Kotest.Part2Test: example (2)" />
-      <item itemvalue="Kotest.Part2Test: solution" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotest.Part2Test: solution" />
-        <item itemvalue="Kotest.Part2Test: example (2)" />
+        <item itemvalue="Gradle.Part2Test (1)" />
         <item itemvalue="Gradle.Part1Test (1)" />
-        <item itemvalue="Kotest.Part2Test: example (1)" />
         <item itemvalue="Kotest.Part2Test: example" />
+        <item itemvalue="Kotest.Part1Test: solution" />
+        <item itemvalue="Kotest.Part1Test: example (4)" />
       </list>
     </recent_temporary>
   </component>
@@ -308,22 +321,45 @@
       <option name="presentableId" value="Default" />
       <updated>1732151601627</updated>
     </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <option name="closed" value="true" />
+      <created>1733074651297</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1733074651297</updated>
+    </task>
+    <task id="LOCAL-00002" summary="day 1 puzzle">
+      <option name="closed" value="true" />
+      <created>1733074671911</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1733074671911</updated>
+    </task>
+    <task id="LOCAL-00003" summary="day 2 puzzle">
+      <option name="closed" value="true" />
+      <created>1733151674973</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1733151674973</updated>
+    </task>
+    <task id="LOCAL-00004" summary="day 2 puzzle">
+      <option name="closed" value="true" />
+      <created>1733151685366</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1733151685366</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/test/kotlin/dev/jatzuk/aoc/y2024/day01/Part1Test.kt</url>
-          <line>55</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/test/kotlin/dev/jatzuk/aoc/y2024/day01/Part1Test.kt</url>
-          <line>51</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial commit" />
+    <MESSAGE value="day 1 puzzle" />
+    <MESSAGE value="day 2 puzzle" />
+    <option name="LAST_COMMIT_MESSAGE" value="day 2 puzzle" />
   </component>
 </project>
