@@ -2,7 +2,7 @@ package dev.jatzuk.aoc.y2024.day02
 
 import kotlin.math.abs
 
-class Part1 {
+class D2P1 {
 
   fun solution(input: Array<IntArray>): Int = input.count { checkValues(it.toList()) }
 

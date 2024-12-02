@@ -1,16 +1,16 @@
 package dev.jatzuk.aoc.y2024.day02
 
-class Part2 {
+class D2P2 {
 
   fun solution(input: Array<IntArray>): Int {
-    return input.toList().count {
-      if (checkValues(it.toList())) {
+    return input.toList().count { origin ->
+      if (checkValues(origin.toList())) {
         return@count true
       }
 
-      it.indices.any { index ->
-        val modified = it.filterIndexed { filterIndex, i -> filterIndex != index }
-        checkValues(modified)
+      origin.indices.any { originIndex ->
+        val removed = origin.filterIndexed() {index, _ -> index != originIndex }
+        checkValues(removed)
       }
     }
   }

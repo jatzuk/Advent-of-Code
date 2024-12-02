@@ -4,7 +4,7 @@ import dev.jatzuk.aoc.y2024.fromResourcesReadLines
 import io.kotest.core.spec.style.FunSpec
 import io.kotest.matchers.shouldBe
 
-class Part1Test : FunSpec({
+class D2P2Test : FunSpec({
 
   fun getInput(path: String): Array<IntArray> {
     return path.fromResourcesReadLines()
@@ -17,14 +17,14 @@ class Part1Test : FunSpec({
   }
 
   test("example") {
-    val input = getInput("/y2024/day02/part1/input0")
-    val result = Part1().solution(input)
-    result.shouldBe(2)
+    val input = getInput("/y2024/day02/part2/input0")
+    val result = D2P2().solution(input)
+    result.shouldBe(4)
   }
 
   test("solution") {
-    val input = getInput("/y2024/day02/part1/input1")
-    val result = Part1().solution(input)
-    result.shouldBe(257)
+    val input = getInput("/y2024/day02/part2/input1")
+    val result = D2P2().solution(input)
+    result.shouldBe(328)
   }
 })

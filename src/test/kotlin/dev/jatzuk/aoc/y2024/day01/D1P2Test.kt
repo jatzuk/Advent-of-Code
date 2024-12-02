@@ -4,7 +4,7 @@ import dev.jatzuk.aoc.y2024.fromResourcesReadLines
 import io.kotest.core.spec.style.FunSpec
 import io.kotest.matchers.shouldBe
 
-class Part2Test : FunSpec({
+class D1P2Test : FunSpec({
 
   fun getInputs(path: String): Pair<List<Long>, List<Long>> {
     val left = mutableListOf<Long>()
@@ -25,13 +25,13 @@ class Part2Test : FunSpec({
 
   test("example") {
     val (left, right) =getInputs("/y2024/day01/part2/input0")
-    val result = Part2().solution(left.toLongArray(), right.toLongArray())
+    val result = D1P2().solution(left.toLongArray(), right.toLongArray())
     result.shouldBe(31)
   }
 
   test("solution") {
     val (left, right) =getInputs("/y2024/day01/part2/input1")
-    val result = Part2().solution(left.toLongArray(), right.toLongArray())
+    val result = D1P2().solution(left.toLongArray(), right.toLongArray())
     result.shouldBe(22962826)
   }
 })

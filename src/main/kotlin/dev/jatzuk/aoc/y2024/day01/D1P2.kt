@@ -1,6 +1,6 @@
 package dev.jatzuk.aoc.y2024.day01
 
-class Part2 {
+class D1P2 {
 
   fun solution(left: LongArray, right: LongArray): Long {
     val rightMap = right.associateWith { n -> right.count { n == it } }

@@ -2,7 +2,7 @@ package dev.jatzuk.aoc.y2024.day01
 
 import kotlin.math.abs
 
-class Part1 {
+class D1P1 {
 
   fun solution(left: LongArray, right: LongArray): Long {
     val leftSorted = left.sorted()
