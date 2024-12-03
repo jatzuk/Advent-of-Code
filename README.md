@@ -44,9 +44,11 @@ You can take a look at a config file in the project root `settings.gradle.kts`.
     ./gradlew :wrapper
     ```
 
-4. Explore the challenges, solutions, and input files in their respective directories.
+4. Explore the challenges and solution files in their respective directories.
 
 ## Running Solutions
+
+`Please, pay attention that tests input files are not included in the vcs, so don't forget to grab your own for each day's puzzle`
 
 Each solution file is designed to run independently. Simply use IntelliJ to start tests.
 

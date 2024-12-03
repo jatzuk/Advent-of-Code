@@ -1,5 +1,7 @@
 package dev.jatzuk.aoc.util
 
+@Throws(IllegalStateException::class)
 fun String.fromResourcesReadLines(): List<String> {
-  return object {}.javaClass.getResourceAsStream(this)?.bufferedReader()?.readLines() ?: error("Failed to read file on path: $this")
+  val resource = object {}.javaClass.getResourceAsStream(this) ?: error("Failed to read file $this")
+  return resource.bufferedReader().readLines()
 }
