@@ -1,6 +1,6 @@
 package dev.jatzuk.aoc.y2024.day03
 
-import dev.jatzuk.aoc.y2024.fromResourcesReadLines
+import dev.jatzuk.aoc.util.fromResourcesReadLines
 import io.kotest.core.spec.style.FunSpec
 import io.kotest.matchers.shouldBe
 
