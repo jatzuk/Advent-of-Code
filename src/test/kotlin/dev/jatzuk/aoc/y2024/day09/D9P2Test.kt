@@ -12,11 +12,9 @@ class D9P2Test : FunSpec({
     result.shouldBe(2858)
   }
 
-  // TODO: not solved
   test("solution") {
     val input = "/y2024/day09/part2/input1".fromResourcesReadLines().joinToString().toList()
     val result = D9P2().solution(input)
-    println(result)
-//   < 8560706397829
+    result.shouldBe(6418529470362)
   }
 })

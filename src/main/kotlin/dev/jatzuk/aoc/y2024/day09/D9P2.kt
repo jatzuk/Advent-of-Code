@@ -1,66 +1,62 @@
 package dev.jatzuk.aoc.y2024.day09
 
-import java.util.TreeSet
+import java.util.TreeMap
 
 class D9P2 {
 
   fun solution(input: List<Char>): Long {
-    val memory = IntArray(input.sumOf { it.digitToInt() }) { -1 }
+    val freeSpaceRanges = mutableListOf<Page>()
+    val files = TreeMap<Int, Page> { a, b -> b - a }
+
     var memoryIndex = 0
-
-    val freeSpaceRanges = ArrayDeque<Pair<Int, Int>>()
-    val files = TreeSet<Triple<Int, Int, Int>> { a, b -> b.first - a.first }
-
-    for ((blockId, i) in (input.indices step 2).withIndex()) {
-      val blockSize = input[i].digitToInt()
-      val spaceSize = input.getOrNull(i + 1)?.digitToInt()
-
-      files.add(Triple(blockId, blockSize, memoryIndex))
-
-      repeat(blockSize) {
-        memory[memoryIndex++] = blockId
-      }
-
-      if (spaceSize != null && spaceSize != 0) {
-        val start = memoryIndex
-        memoryIndex += spaceSize
-        freeSpaceRanges.add(start to start + spaceSize)
-      }
-    }
-
-    memory.deFragment(files, freeSpaceRanges)
-
-    return memory
-      .withIndex()
-      .sumOf { (index, value) ->
-        if (value > 0) index * value.toLong() else 0L
-      }
-  }
-
-  private fun IntArray.deFragment(files: Set<Triple<Int, Int, Int>>, freeSpaceRanges: ArrayDeque<Pair<Int, Int>>) {
-    for ((id, size, startIndex) in files) {
-      val freeSpaceIndex = freeSpaceRanges.indexOfFirst { (start, end) -> end - start >= size }
-      if (freeSpaceIndex == -1) {
-        continue
-      }
-
-      val (start, end) = freeSpaceRanges[freeSpaceIndex]
-      val available = end - start
-      if (available < size) {
-        continue
-      }
-
-      repeat(size) {
-        this[start + it] = id
-        this[startIndex + it] = -1
-      }
-
-      val endIndex = start + size
-      if (endIndex == end) {
-        freeSpaceRanges.removeAt(freeSpaceIndex)
+    for ((index, value) in input.withIndex()) {
+      val size = value.digitToInt()
+      if (index % 2 == 0) {
+        val fileId = index / 2
+        files[fileId] = Page(memoryIndex, size)
       } else {
-        freeSpaceRanges[freeSpaceIndex] = endIndex to end
+        freeSpaceRanges.add(Page(memoryIndex, size))
+      }
+      memoryIndex += size
+    }
+
+    files.deFragment(freeSpaceRanges)
+
+    return files.entries
+      .sumOf { (fileId, page) ->
+        (page.index until page.index + page.size).sumOf {
+          it * fileId.toLong()
+        }
+    }
+  }
+
+  private fun MutableMap<Int, Page>.deFragment(freeSpaceRanges: MutableList<Page>) {
+    for (fileId in keys) {
+      val file = this[fileId] ?: continue
+
+      var i = 0
+      while (i < freeSpaceRanges.size) {
+        val freeSpace = freeSpaceRanges[i]
+        if (freeSpace.index > file.index) {
+          break
+        }
+
+        val available = freeSpace.size - file.size
+
+        if (available >= 0) {
+          this[fileId] = Page(freeSpace.index, file.size)
+          if (available == 0) {
+            freeSpaceRanges.removeAt(i)
+          } else {
+            freeSpaceRanges[i] = Page(freeSpace.index + file.size, available)
+          }
+          break
+        }
+
+        i++
       }
     }
   }
+
+  private class Page(val index: Int, val size: Int)
 }
