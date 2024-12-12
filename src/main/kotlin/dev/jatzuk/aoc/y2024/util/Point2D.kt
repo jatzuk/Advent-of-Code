@@ -7,6 +7,6 @@ data class Point2D(val x: Int, val y: Int) {
   }
 }
 
-fun Point2D.isInside(map: List<List<Int>>): Boolean {
-  return y in map.indices && x in map[0].indices
+fun <T> Point2D.isInside(map: Collection<Collection<T>>): Boolean {
+  return y in map.indices && x in map.first().indices
 }
