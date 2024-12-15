@@ -1,6 +1,6 @@
 package dev.jatzuk.aoc.y2024.day08
 
-import dev.jatzuk.aoc.y2024.util.Vector2D
+import dev.jatzuk.aoc.util.Vector2D
 
 class D8P1 {
 

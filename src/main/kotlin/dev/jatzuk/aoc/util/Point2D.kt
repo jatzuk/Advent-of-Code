@@ -1,4 +1,4 @@
-package dev.jatzuk.aoc.y2024.util
+package dev.jatzuk.aoc.util
 
 import kotlin.math.abs
 

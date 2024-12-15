@@ -1,7 +1,7 @@
 package dev.jatzuk.aoc.y2024.day08
 
-import dev.jatzuk.aoc.y2024.util.Vector2D
-import dev.jatzuk.aoc.y2024.util.isInside
+import dev.jatzuk.aoc.util.Vector2D
+import dev.jatzuk.aoc.util.isInside
 
 class D8P2 {
 
@@ -50,10 +50,10 @@ class D8P2 {
   }
 
   private fun accumulate(
-    input: List<String>,
-    start: Vector2D,
-    acc: (Vector2D) -> Vector2D,
-    onInside: (Vector2D) -> Unit
+      input: List<String>,
+      start: Vector2D,
+      acc: (Vector2D) -> Vector2D,
+      onInside: (Vector2D) -> Unit
   ) {
     var vector = start
 

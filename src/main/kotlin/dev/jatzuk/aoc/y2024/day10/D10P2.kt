@@ -1,8 +1,8 @@
 package dev.jatzuk.aoc.y2024.day10
 
-import dev.jatzuk.aoc.y2024.util.Direction
-import dev.jatzuk.aoc.y2024.util.Point2D
-import dev.jatzuk.aoc.y2024.util.isInside
+import dev.jatzuk.aoc.util.Direction
+import dev.jatzuk.aoc.util.Point2D
+import dev.jatzuk.aoc.util.isInside
 
 class D10P2 {
 
@@ -35,10 +35,10 @@ class D10P2 {
   }
 
   private fun List<List<Int>>.dfs(
-    position: Point2D,
-    visited: MutableSet<Point2D>,
-    path: MutableList<Point2D>,
-    currentPath: MutableList<Point2D>
+      position: Point2D,
+      visited: MutableSet<Point2D>,
+      path: MutableList<Point2D>,
+      currentPath: MutableList<Point2D>
   ) {
     if (!position.isInside(this)) {
       return

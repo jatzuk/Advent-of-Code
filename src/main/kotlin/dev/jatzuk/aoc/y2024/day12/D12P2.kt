@@ -1,9 +1,9 @@
 package dev.jatzuk.aoc.y2024.day12
 
-import dev.jatzuk.aoc.y2024.util.Direction
-import dev.jatzuk.aoc.y2024.util.Point2D
-import dev.jatzuk.aoc.y2024.util.isAdjacentTo
-import dev.jatzuk.aoc.y2024.util.isInside
+import dev.jatzuk.aoc.util.Direction
+import dev.jatzuk.aoc.util.Point2D
+import dev.jatzuk.aoc.util.isAdjacentTo
+import dev.jatzuk.aoc.util.isInside
 
 class D12P2 {
 

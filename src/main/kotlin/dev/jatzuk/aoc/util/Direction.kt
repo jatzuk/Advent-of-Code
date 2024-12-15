@@ -1,4 +1,4 @@
-package dev.jatzuk.aoc.y2024.util
+package dev.jatzuk.aoc.util
 
 enum class Direction(val dx: Int, val dy: Int) {
   LEFT(-1, 0),
