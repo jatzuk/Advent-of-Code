@@ -27,7 +27,7 @@ class D14P1Test : FunSpec({
         Robot(Point2D(x, y), Vector2D(dx, dy))
       }
 
-    val result = D14P1().solution(101, 103 ,input, 100)
+    val result = D14P1().solution(101, 103, input, 100)
     result.shouldBe(233709840)
   }
 })
