@@ -1,4 +1,4 @@
-# Advent of Code with Kotlin repository
+# Advent of Code Adventures
 
 Welcome to the Advent of Code puzzles repository!
 
@@ -7,22 +7,21 @@ the [Advent of Code](https://adventofcode.com) programming competition.
 
 ## About Advent of Code
 
-Advent of Code is an annual coding event that takes place in December. Each day, a new programming puzzle is released,
-challenging participants to solve problems ranging from simple algorithmic tasks to more complex problems that require
-creative thinking. The puzzles cover a variety of programming concepts, making it a great opportunity to enhance your
-coding skills.
+Advent of Code is an annual coding event held every December. Each day, a new programming puzzle is released,
+challenging participants to solve problems ranging from simple algorithmic tasks to more complex challenges requiring
+creative thinking. The puzzles cover a variety of programming concepts, making it an excellent opportunity to enhance
+your coding skills.
 
 ## Repository Structure
 
-The project is created as a plain Gradle project with a single root module.
-You can take a look at a config file in the project root `settings.gradle.kts`.
+The project is organized as a plain Gradle project with a single root module. You can find the configuration file in the
+project root: `settings.gradle.kts`.
 
-- **src/main:** Here, you can find solutions to each day's puzzle. Solutions are organized by day number, with
-  each solution residing in a separate file named `DayN.kt`, where `N` is the day number.
-
-- **src/test:** The `test` source set contains test cases for each puzzle and stores an input file respectively.
-
-- **src/test/resources:** The `test` source set contains input files for the puzzle.
+- **src/main:** Contains solutions for each day's puzzles. Solutions are organized by day number, with each solution in
+  a separate file named `DayN.kt`, where `N` is the day number.
+- **src/test:** Contains test cases for each puzzle. Each test corresponds to a specific puzzle and uses the respective
+  input file.
+- **src/test/resources:** Contains input files used by the test cases. (Not included in vcs, read below)
 
 ## Getting Started
 
@@ -38,7 +37,7 @@ You can take a look at a config file in the project root `settings.gradle.kts`.
     cd aoc
     ```
 
-3. Sync the Gradle project via IDEA or from the CLI and initialize the wrapper:
+3. Sync the Gradle project in IntelliJ IDEA or using the command line, and initialize the wrapper:
 
     ```gradle
     ./gradlew :wrapper
@@ -48,26 +47,28 @@ You can take a look at a config file in the project root `settings.gradle.kts`.
 
 ## Running Solutions
 
-`Please, pay attention that tests input files are not included in the vcs, so don't forget to grab your own for each day's puzzle`
+**Note:**
+Test input files are not included in version control, so make sure to download your own inputs for each day's puzzles.
 
-Each solution file is designed to run independently. Simply use IntelliJ to start tests.
+Each solution file can be run independently. Use IntelliJ IDEA to start the corresponding tests.
 
-Tests are written using [Kotest](https://kotest.io/docs/quickstart) framework.  
+Tests are written using the [Kotest](https://kotest.io/docs/quickstart) framework.
 
-Alternatively, you can use Gradle to run specific tests:
+Alternatively, you can run tests using Gradle:
 
-- For example, if you want to examine first puzzle of the day 1, which is in the `D1P1Test.kt` file:
+- To run the test for the first puzzle of day 1 (`D1P1Test.kt`):
 
     ```gradle
-    ./gradlew :test --tests 'dev.jatzuk.aoc.y2024.day01.D1P1Test' 
+    ./gradlew :test --tests 'dev.jatzuk.aoc.y2024.day01.D1P1Test'
     ```
-- Or execute all tests within day 2 puzzles (2 parts, each has 2 tests in it):
 
-  ```gradle
-  ./gradlew :test --tests 'dev.jatzuk.aoc.y2024.day02.*'
-  ```
+- To run all tests for day 2 puzzles (both parts):
 
-- Alternatively run all tests under the `test` source set:
+    ```gradle
+    ./gradlew :test --tests 'dev.jatzuk.aoc.y2024.day02.*'
+    ```
+
+- To run all tests in the `test` source set:
 
     ```gradle
     ./gradlew :test
